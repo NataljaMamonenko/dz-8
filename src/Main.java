@@ -20,7 +20,7 @@ public class Main {
         }
 
         // Додаємо завдання для групи
-        group.addTask("Выучить Java");
+        group.addTask("Вивчити Java");
 
        // Виводимо информацію о завданнях//
     }
