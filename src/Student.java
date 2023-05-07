@@ -1,46 +1,37 @@
 public class Student {
-    private final int id;
-    String firstName;
-    String lastName;
-    String addTask;
-    String completeTask;
-    String getTasks;
+    private int id;
+    private static int idCounter = 0; // статичний лічильник
+    private String firstName;
+    private String lastName;
 
     public Student(int id, String firstName, String lastName) {
-        this.id = id;
+        this.id = id; // збільшується лічильник на 1 та присвоюється id
         this.firstName = firstName;
         this.lastName = lastName;
-        this.addTask = null;
-        this.completeTask = null;
-        this.getTasks = null;
     }
 
     public int getId() {
         return id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getFirstName() {
         return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {
         return lastName;
     }
 
-    protected String AddTask() { return addTask; }
-
-    public String getCompleteTask() { return completeTask; }
-
-    public String getTasks() { return getTasks; }
-
-    public void setCompleteTask(String completeTask) {
-        this.completeTask = completeTask;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
-    public void setGetTasks(String getTasks) {
-        this.getTasks = getTasks;
-    }
-
-   }
-
-
+}
 
